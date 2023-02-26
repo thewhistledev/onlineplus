@@ -15,7 +15,7 @@ require "onlineplus.loader1"
 
 
 --[[
-    --- Loader ---
+    --- Integrity Check ---
 ]]
 
 local opFiles <const> = {
@@ -27,10 +27,7 @@ for _, file in ipairs(opFiles) do
 	assert(filesystem.exists(requiredFiles .. file), "File failed to validate: " .. file)
 end
 
-
-
-
 --[[
-    --- End of Loader ---
+    --- End of Integrity Check ---
 ]]
 
